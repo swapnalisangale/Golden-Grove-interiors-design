@@ -54,22 +54,56 @@ body {
 }
 
 .main-img {
-    height: 600px;
-    width: 1512px;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
     position: relative;
     overflow: hidden;
-    object-fit: cover;
-    filter: brightness(100%);
+    object-fit:cover;
+    filter:brightness(100%);
     background: url('../images/interior.png');
 }
-
 .main-img img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
+
+/* Tablet View */
+@media (max-width: 768px) {
+  .main-img img {
+    height: 350px;
+    object-position: center;
+  }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+  .main-img img {
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .main-img {
+    height: 350px;
+  }
+}
+
+/* Mobile (max-width: 480px) */
+@media (max-width: 480px) {
+  .main-img {
+    height: 250px;
+    object-position: center;
+  }
+}
+
+
+
 
 /* Tablet View */
 @media (max-width: 768px) {
@@ -87,42 +121,6 @@ body {
         object-position: center;
     }
 }
-
-
-.hero {
-    width: 100vh;
-    height: 100vh;
-    background-image: url(../images/interior.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.hero h1 {
-    color: white;
-    font-size: 40px;
-    writing-mode: horizontal-tb;
-    transform: none;
-}
-
-
-@media (max-width:768) {
-    .hero {
-        height: 70vh;
-        background-position: center top;
-
-    }
-
-    .hero h1 {
-        font-size: 1.8rem;
-        padding: 10px;
-    }
-
-}
-
 @media (max-width: 768px) {
     .main-img {
         height: 350px;
@@ -205,7 +203,7 @@ body {
 .services-title:after {
     content: "";
     position: absolute;
-    top: 50%;
+    top: 0%;
     width: 80px;
     height: 2px;
     background: #3a3a3a;
