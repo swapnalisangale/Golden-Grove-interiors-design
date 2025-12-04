@@ -119,6 +119,7 @@ body {
     padding: 0;
     overflow: hidden;
 }
+
 .footer {
      background-color: rgb(137, 53, 53);
     color: #fff;
@@ -140,24 +141,29 @@ body {
     margin-bottom: 15px;
 }
 
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 20px 0; 
+  
+}
+
 .social-icons a {
-    font-size: 22px;
-    margin: 0 10px;
-    color: #fff;
-    transition: .3s;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+   
+}
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
 }
 
-.social-icons a:hover {
-    color: #ffcc00;
-    transform: scale(1.2);
-}
 
-.app-buttons img {
-    width: 140px;
-    margin: 12px;
-}
-
-/* Links Grid */
 .footer-links {
     display: flex;
     justify-content: space-between;
@@ -192,7 +198,6 @@ body {
     margin-top: 20px;
 }
 
-/* Mobile */
 @media (max-width: 768px) {
     .footer-links {
         text-align: center;
